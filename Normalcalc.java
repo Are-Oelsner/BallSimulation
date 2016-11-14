@@ -1,3 +1,11 @@
+/* Name: Are Oelsner
+ * Program I created to help me calculate normals for my obstacles file
+ * Contains a lot of failed attempts, but the first line it prints out
+ * when given 2 points as input is the unit vector of one of the normals
+ *
+ * I realized that I didn't need to use angles only after creating my angle()
+ * and norm() methods
+*/
 public class Normalcalc {
         public static double angle(Vector v) {
                 return Math.atan(v.y()/v.x())*(180/Math.PI);

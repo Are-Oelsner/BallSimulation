@@ -10,6 +10,12 @@ public class Normalcalc {
                 return n;
         }
 
+        public static Vector getNorm(Vector p0, Vector p1) {
+                Vector p = p1.sub(p0);
+                Vector n = new Vector(p.y(), -p.x());
+                return n.normeq();
+        }
+
         public static void main(String[] args) {
                 double x1 = Double.parseDouble(args[0]);
                 double y1 = Double.parseDouble(args[1]);
